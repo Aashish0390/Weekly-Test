@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout PAGE</title>
+    <link rel="stylesheet" href="sytyle.css">
+</head>
+<section class="full-doc">
+    
+
+    
+    <form class="form-sec">
+        <h1 class="checkout">Checkout</h1>
+        
+        <h3>Shipping Information</h3>
+        <input type="radio" class="rad-one" id="rad-one" value="delivery"></input>
+        <input type="radio" class="rad-one" id="rad-one" value="pickup"></input>
+        
+        <p class="info-rreq">Full Name * </p>
+        <input type="text" class="full-name" id="name-id" name="full_name" value="Brandon Johnson" required></input><br>
+        <p class="info-rreq">Email address * </p>
+        <input type="text" class="e-mail" id="email-id" value="brandonjohnson@gmail.com" required></input><br>
+        <p class="info-rreq">Phone  * </p>
+        <input type="text" class="phone-no" id="phone-num" value="+1 425 151 2318" required></input><br>
+        <p class="info-rreq">Country * </p>
+        <select class="country-name" id="country-user" value="Choose country" required>
+            <option value="Choose Counytry"> Choose Country </option>
+            <option value="United States"> United States</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="India">India</option>
+        </select><br>
+    </form>
+
+
+
+
+
+<section class="chk-out">
+
+
+    <h3 class="cart-heading">Review your cart</h3>
+    <div class="item-one">
+        <div class="first-side">
+        <img class="image-one" src="Img1.jpeg">
+        <p class="name-one">Sofa Set</p>
+        <p class="size-one">1x</p>
+        <p class="price-one">$25.00</p>
+        </div>
+        
+    </div>
+    <div class="item-two">
+        <img class="image-two" src="img2.jpeg">
+        <p class="name-two">Dining Set</p>   
+        <p class="size-two">1x</p>
+        <p class="price-two">$20.00</p>   
+    </div>
+
+
+
+
+
+    <form class="side-form">
+    <input type="text" name="discount-code" class="discount-code"  id="discount-code" vlaue="discount-code"></input><br>
+    
+    <div class="total-money">
+        <div class="sub-total">
+            <h5 class="sub-total">Subtotal</h5>
+            <h5 class="sub-money">$45.00</h5>
+        </div>
+
+        <div class="shipping-total">
+            <h5 class="shipping-total">Shipping</h5>
+            <h5 class="shipping-money">$5.00</h5>
+        </div>
+
+        <div class="sub-discount">
+            <h5 class="sub-discount">Discount</h5>
+            <h5 class="discount-money">-$10.00</h5>
+        </div>
+
+        <div class="total-amount">
+            <h5 class="total-amount">Total</h5>
+            <h5 class="total-amt">$40.00</h5>
+        </div>
+    </div>
+
+     <input type="text" class="pay-now"  vlaue="pay-now">
+    </form>
+
+
+    <div class="last-item">
+        <h5 class="last-hdng">Secure Checkout - SSL Encrypted</h5>
+        <p class="last-para">Ensuring your financial and personal details are secure during every transaction.</p>
+    </div>
+</section>
+</section> 
+</body>
+</html>

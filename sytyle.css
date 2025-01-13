@@ -1,0 +1,186 @@
+*{
+    text-decoration: none;
+}
+
+h1{
+    color: black;
+}
+
+.full-doc{
+    display: FLEX;
+}
+
+
+
+/*CSS FOR FORM */
+.form-sec{
+    width: 350px;
+    margin: 0px 0px 0px 50px;
+}
+
+.rad-one{
+   border: 5px solid black;
+   width: 150px;
+}
+
+
+.info-rreq{
+    margin: 10px 10px 5px 10px;
+    font-size: 14px;
+}
+.full-name{
+    font-size: 15px;
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+}
+.e-mail{
+    font-size: 15px;
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+}
+.phone-no{
+    font-size: 15px;
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+}
+.country-name{
+    font-size: 15px;
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+/*CSS FOR CART SECTION */
+
+.chk-out{
+    width: 300px;
+    margin: 50px;
+}
+
+.first-side{
+    display: flex;
+}
+
+.image-one{
+    width: 100px;
+    margin: 0px 10px 0px 0px;
+}
+
+.name-one{
+    margin: 0px
+}
+
+/*CSS FOR DISCOUNT */
+
+
+.discount-code{
+    width: 300px;
+    height: 30px;
+    margin: 10px 0px 0px 0px;
+}
+
+.size-one{
+
+}
+
+.price-one{
+
+}
+
+
+.image-two{
+    width: 100px;
+    margin: 10px 10px 0px 0px;
+}
+
+.item-two{
+    display: flex;
+}
+.name-two{
+    margin: 0px
+}
+
+.size-two{
+
+}
+
+.price-two{
+
+}
+
+
+.image-two{
+    width: 100px;
+}
+
+
+.sub-total{
+    display: flex;
+    width: 300px;
+    height: 20px;
+    margin: 5px 5px 5px 0px;
+}
+.sub-money{
+    height: 20px;
+    margin: 5px;
+}
+
+.shipping-total{
+    display: flex;
+    width: 300px;
+    margin: 5px 5px 5px 0px;
+    
+    
+}
+.shipping-money{
+    height: 20px;
+    margin: 5px;
+}
+
+.sub-discount{
+    display: flex;
+    width: 300px;
+    margin: 5px 5px 5px 0px;
+}
+.discount-money{
+    height: 20px;
+    margin: 5px;
+}
+
+.total-amount{
+    display: flex;
+    width: 300px;
+    margin: 5px 5px 5px 0px;
+    
+    
+}
+.total-amt{
+    height: 20px;
+    margin: 5px;
+}
+
+
+.pay-now{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(48, 134, 246);
+    border: 0px;
+    border-radius: 7px;
+}
+
+
+
+
+
+.last-hdng{
+    margin: 20px 0px 0px 0px;
+
+}
+
+.last-para{
+    margin: 5px 0px 0px 0px;
+    font-size: 13px;
+}
