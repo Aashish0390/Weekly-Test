@@ -4,10 +4,15 @@
 
 h1{
     color: black;
+    margin-left: 10px;
 }
 
+h3{
+    color: black;
+    margin-left: 10px;
+}
 .full-doc{
-    display: FLEX;
+    display: flex;
 }
 
 
@@ -20,7 +25,23 @@ h1{
 
 .rad-one{
    border: 5px solid black;
-   width: 150px;
+   width: 10pxpx;
+}
+
+.box-radio{
+    width: 145px;
+    height: 30px;
+    border: 2px solid grey;
+    margin: 2px;
+    border-radius: 5px;
+    margin: 10px 0px 2px 10px;
+    align-content: center;
+    
+
+}
+.box-type{
+    
+    display: flex;
 }
 
 
@@ -28,29 +49,38 @@ h1{
     margin: 10px 10px 5px 10px;
     font-size: 14px;
 }
+
 .full-name{
     font-size: 15px;
     margin-left: 10px;
     width: 300px;
     height: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 .e-mail{
     font-size: 15px;
     margin-left: 10px;
     width: 300px;
     height: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 .phone-no{
     font-size: 15px;
     margin-left: 10px;
     width: 300px;
     height: 30px;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 .country-name{
     font-size: 15px;
     margin-left: 10px;
     width: 300px;
-    height: 30px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid grey;
 }
 
 /*CSS FOR CART SECTION */
@@ -64,9 +94,10 @@ h1{
     display: flex;
 }
 
-.image-one{
+.image-s{
     width: 100px;
-    margin: 0px 10px 0px 0px;
+    margin: 0px 10px 10px 0px;
+    height: 70px;
 }
 
 .name-one{
@@ -77,24 +108,37 @@ h1{
 
 
 .discount-code{
-    width: 300px;
+    width: 245px;
     height: 30px;
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px 5px 0px;
+    color: blue;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+.coup-app{
+    width: 45px;
+    height: 35px;
+    color: white;
+    margin: 10px 0px 0px 2px;
+    background-color: rgb(48, 134, 246);
+    border-radius: 5px;
+    border: 0px;
+}
+.dis-sec{
+    display: flex;
 }
 
-.size-one{
-
+.pro-info{
+    height: 70px;
+    padding: 0px;
+}
+.size-p{
+    margin: 0px;
+    padding: 5px 2px 0px;
+    font-size: 13px;
 }
 
-.price-one{
 
-}
-
-
-.image-two{
-    width: 100px;
-    margin: 10px 10px 0px 0px;
-}
 
 .item-two{
     display: flex;
@@ -103,25 +147,24 @@ h1{
     margin: 0px
 }
 
-.size-two{
 
-}
-
-.price-two{
-
-}
 
 
 .image-two{
     width: 100px;
 }
 
+.side-form{
+    align-items: center;
+}
 
 .sub-total{
     display: flex;
     width: 300px;
     height: 20px;
     margin: 5px 5px 5px 0px;
+    justify-content: space-between;
+    
 }
 .sub-money{
     height: 20px;
@@ -132,6 +175,8 @@ h1{
     display: flex;
     width: 300px;
     margin: 5px 5px 5px 0px;
+    justify-content: space-between;
+    height: 20px;
     
     
 }
@@ -144,6 +189,9 @@ h1{
     display: flex;
     width: 300px;
     margin: 5px 5px 5px 0px;
+    justify-content: space-between;
+    height: 20px;
+    
 }
 .discount-money{
     height: 20px;
@@ -153,21 +201,27 @@ h1{
 .total-amount{
     display: flex;
     width: 300px;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 5px 15px 0px;
+    justify-content: space-between;
+    height: 20px;
     
     
 }
 .total-amt{
-    height: 20px;
+    height: 15px;
     margin: 5px;
 }
 
-
+h5{
+    height: 20px;
+    margin: 0px;
+}
 .pay-now{
     width: 300px;
     height: 40px;
     background-color: rgb(48, 134, 246);
     border: 0px;
+    margin: 10px 0;
     border-radius: 7px;
 }
 
@@ -176,7 +230,7 @@ h1{
 
 
 .last-hdng{
-    margin: 20px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
 
 }
 
