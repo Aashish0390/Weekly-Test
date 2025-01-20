@@ -1,240 +1,362 @@
-*{
-    text-decoration: none;
-}
 
-h1{
-    color: black;
-    margin-left: 10px;
-}
 
-h3{
-    color: black;
-    margin-left: 10px;
-}
+
+ 
+
+
+
+
 .full-doc{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
+   
+    margin:  0px 80px ;
+    height: 100%;
 }
 
-
-
-/*CSS FOR FORM */
-.form-sec{
-    width: 350px;
-    margin: 0px 0px 0px 50px;
+.checkout{
+    font-size: 40px;
+    grid-column: span 2;
+    margin: 10px 0px 10px 0px;
+}
+.ship-info{
+    font-size: 22px;
+    grid-column: span 2;
+    padding-top: 20px;
+    margin:  0px;
 }
 
-.rad-one{
-   border: 5px solid black;
-   width: 10pxpx;
-}
-
-.box-radio{
-    width: 145px;
-    height: 30px;
-    border: 2px solid grey;
-    margin: 2px;
-    border-radius: 5px;
-    margin: 10px 0px 2px 10px;
-    align-content: center;
+.gr-form{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: span 2;
+    grid-template-columns: 316px 1fr;
+    grid-column: span 1;
     
-
 }
-.box-type{
+
+
+
+.radios{
     
     display: flex;
-}
-
-
-.info-rreq{
-    margin: 10px 10px 5px 10px;
-    font-size: 14px;
-}
-
-.full-name{
-    font-size: 15px;
-    margin-left: 10px;
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 2px solid grey;
-}
-.e-mail{
-    font-size: 15px;
-    margin-left: 10px;
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 2px solid grey;
-}
-.phone-no{
-    font-size: 15px;
-    margin-left: 10px;
-    width: 300px;
-    height: 30px;
-    border-radius: 5px;
-    border: 2px solid grey;
-}
-.country-name{
-    font-size: 15px;
-    margin-left: 10px;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    border: 2px solid grey;
-}
-
-/*CSS FOR CART SECTION */
-
-.chk-out{
-    width: 300px;
-    margin: 50px;
-}
-
-.first-side{
-    display: flex;
-}
-
-.image-s{
-    width: 100px;
-    margin: 0px 10px 10px 0px;
-    height: 70px;
-}
-
-.name-one{
-    margin: 0px
-}
-
-/*CSS FOR DISCOUNT */
-
-
-.discount-code{
-    width: 245px;
-    height: 30px;
-    margin: 10px 0px 5px 0px;
-    color: blue;
-    border-radius: 5px;
-    border: 2px solid grey;
-}
-.coup-app{
-    width: 45px;
     height: 35px;
-    color: white;
-    margin: 10px 0px 0px 2px;
-    background-color: rgb(48, 134, 246);
-    border-radius: 5px;
-    border: 0px;
-}
-.dis-sec{
-    display: flex;
+    column-gap: 10px;
+    width: 600px;
+    
+
 }
 
-.pro-info{
-    height: 70px;
-    padding: 0px;
-}
-.size-p{
-    margin: 0px;
-    padding: 5px 2px 0px;
-    font-size: 13px;
+.radio i{
+    color: grey;
+    align-content: center;
+    padding: 0px 5px 0px  10px;
 }
 
-
-
-.item-two{
-    display: flex;
-}
-.name-two{
-    margin: 0px
-}
-
-
-
-
-.image-two{
-    width: 100px;
-}
-
-.side-form{
-    align-items: center;
-}
-
-.sub-total{
-    display: flex;
-    width: 300px;
-    height: 20px;
-    margin: 5px 5px 5px 0px;
-    justify-content: space-between;
+.radio{
+    font-size: 17px;
+    padding-left: 10px;
+    border: 1px solid gray;
+    color: grey;
+border-radius: 7px;
+height: 50px;
+width: 600px;
+align-content: center;
+font-size: 15px;
     
 }
-.sub-money{
-    height: 20px;
-    margin: 5px;
-}
-
-.shipping-total{
-    display: flex;
-    width: 300px;
-    margin: 5px 5px 5px 0px;
-    justify-content: space-between;
-    height: 20px;
-    
-    
-}
-.shipping-money{
-    height: 20px;
-    margin: 5px;
-}
-
-.sub-discount{
-    display: flex;
-    width: 300px;
-    margin: 5px 5px 5px 0px;
-    justify-content: space-between;
-    height: 20px;
-    
-}
-.discount-money{
-    height: 20px;
-    margin: 5px;
-}
-
-.total-amount{
-    display: flex;
-    width: 300px;
-    margin: 5px 5px 15px 0px;
-    justify-content: space-between;
-    height: 20px;
-    
-    
-}
-.total-amt{
-    height: 15px;
-    margin: 5px;
-}
-
-h5{
-    height: 20px;
-    margin: 0px;
-}
-.pay-now{
-    width: 300px;
-    height: 40px;
-    background-color: rgb(48, 134, 246);
-    border: 0px;
-    margin: 10px 0;
+.radio:hover {
+    background-color:rgb(190, 229, 248);
+    cursor: pointer;
+    color:#69a5f4;
+    border: 2px inset #0e4fa4;
     border-radius: 7px;
 }
 
 
+.input-data{
+    grid-column: span 2;
+    margin: 17px 0px 0px 0px ;
+    font-size: 17px;
+   
+}
+.input-item{
+    font-size: 17px;
+    grid-column: span 2;
+    margin: 10px 0px 0px 0px ;
+   
+}
+.full-name{
+    font-size: 17px;
+    grid-template-columns: span 2;
+    padding-left: 10px;
+    border: 1px solid gray;
+
+border-radius: 7px;
+height: 40px;
+width: 589px;
+margin-top: 10px;
+
+}
 
 
 
+
+.e-mail{
+    font-size: 17px;
+    grid-template-columns: span 2;
+    padding-left: 10px;
+    border: 1px solid gray;
+border-radius: 7px;
+height: 40px;
+width: 589px;
+margin-top: 10px;
+
+}
+
+.country-name{
+    font-size: 17px;
+    grid-template-columns: span 2;
+    padding: 10px 0;
+    border: 1px solid gray;
+    color: grey;
+border-radius: 7px;
+height: 45px;
+width: 605px;
+margin-top: 10px;
+
+
+}
+.sel-item{
+    font-size: 17px;
+    grid-template-columns: span 2;
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 7px;
+    height: 40px;
+    align-content: center;
+    width: 600px;
+    margin-top: 10px;
+}
+.country-code{
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+}
+.phone-no{
+    font-size: 17px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 520px;
+}
+
+
+
+
+
+
+
+
+/* Styling Side section */
+
+
+
+
+
+
+
+
+.chk-out{
+    font-size: 22px;
+    display: grid;
+    grid-template-columns: 316px 1fr;
+    background-color: rgb(239, 244, 244);
+    padding: 35px 60px 20px 60px;
+}
+
+
+.dis-sec {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 10 0px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    background-color: white;
+    height: 45px;
+    
+}
+
+
+.dis-sec i {
+    color: grey; 
+    margin: 10px;
+    
+}
+
+
+.discount-code {
+    flex: 1; 
+    font-size: 15px;
+    border: none;
+   
+    height: 40px;
+  
+}
+
+
+
+
+.coup-app {
+    
+   background-color: white;
+   color: #69a5f4;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    height: 45px;
+    padding-right: 10px;
+    
+}
+
+
+
+
+
+.cart-heading{
+    grid-column: span 2;
+}
+.first-side{
+    display: flex;
+    width: 100%;
+   
+}
+.item-two{
+    
+    display: flex;
+    margin-bottom: 10px;
+}
+.name-two{
+    font-size: 15px;
+    margin: 0px 0px 5px 0px;
+}
+
+.side-form{
+    display: grid;
+   
+    grid-column: span 2;
+    
+}
+
+.last-item{
+    grid-column: span 2;
+}
+.image-s{
+    height: 80px;
+    width: 80px;
+    border-radius: 7px;
+    border: 2px solid grey;
+}
+
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.sub-total{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.shipping-total{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.sub-discount{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+.size-pr{
+    font-size: 17px;
+}
+.pro-info{
+    margin-left: 20px;
+}
+.name-one{
+    font-size: 17px;
+    margin: 0px 0px 5px 0px;
+}
+.size-p{
+    font-size: 15px;
+    margin: 5px 0px 20px 0px;
+}
+
+.name-two{
+    font-size: 17px;
+    margin: 0px 0px 5px 0px;
+}
+.sub-money{
+    margin: 15px 0px ;
+    align-content: center;
+}
+
+.pay-now{
+    height: 45px;
+    border-radius: 7px;
+    color: white;
+    background-color: rgb(14, 121, 209);
+    border: none;
+    margin: 20px 0px;
+}
+.pay-now:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.tot-am{
+    margin: 10px 0px;
+}
+.fade{ 
+    font-style: none;
+    color: grey;
+    font-size: 15px;
+}
 .last-hdng{
-    margin: 10px 0px 0px 0px;
+    font-size: 17px;
+    margin: 20px 0px 10px 0px;
+    font-size: 17px;
 
 }
-
 .last-para{
-    margin: 5px 0px 0px 0px;
-    font-size: 13px;
+    font-size: 15px;
+    margin: 0px;
+    color: grey;
 }
+
+
+
+
+
+.last-hdng i {
+    color: #69a5f4; 
+    margin-right: 8px; 
+}
+
+
+
+
+
+
