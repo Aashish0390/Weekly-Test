@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout PAGE</title>
-    <link rel="stylesheet" href="sytyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
+<body>
+    
 <section class="full-doc">
     
 
     
-    <form class="form-sec">
-        <h1 class="checkout">Checkout</h1>
-        
-        <h3>Shipping Information</h3>
 
-        <div class="box-type">
-        <div class="box-radio"><input type="radio" class="rad-one" id="rad-one" value="delivery">Delivery</input></div>
-        <div class="box-radio"><input type="radio" class="rad-one" id="rad-one" value="pickup">Pickup</input></div>
-    </div>
+
+
+    <form>
+        <div class="gr-form">
+
+        <h1 class="checkout">Checkout</h1>
+        <h3 class="ship-info">Shipping Information</h3>
+
+        
+
+        <div class="radios">
+             <label class="radio">
+                <input type="radio" id="one" name="rad-one" ><i class="fa fa-truck-fast"></i> Delivery</input>
+             
+            </label>
+
+            <label class="radio"> 
+                <!-- use selectors -->
+                <input type="radio" id="two" name="rad-one" ><i class="fa-solid fa-box"></i> Pick up</input>
+               
+            </label>
+        </div>
      
         
         
+        <div class="input-item">
+            <label for="full-name"><strong>Full Name</strong><span style="color: red;"> *</span> </label><br>
+           
+            <input type="text" class="full-name" id="name-id" name="full_name" value="Brandon Johnson" required></input><br>
+        </div>
+
+        <div class="input-data">
+            <label for="e-mail"><strong>Email address</strong><span style="color: red;"> *</span>  </label><br>
+            <input type="text" class="e-mail" id="email-id" value="brandonjohnson@gmail.com" required></input><br>
+        </div>
+
         
-        <p class="info-rreq">Full Name * </p>
-        <input type="text" class="full-name" id="name-id" name="full_name" value="Brandon Johnson" required></input><br>
-        <p class="info-rreq">Email address * </p>
-        <input type="text" class="e-mail" id="email-id" value="brandonjohnson@gmail.com" required></input><br>
-        <p class="info-rreq">Phone  * </p>
-        <input type="text" class="phone-no" id="phone-num" value="+1 425 151 2318" required></input><br>
-        <p class="info-rreq">Country * </p>
-        <select class="country-name" id="country-user" value="Choose country" required>
-            <option value="Choose Counytry"> Choose Country </option>
-            <option value="United States"> United States</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="India">India</option>
-        </select><br>
+        <div class="input-data">
+            <label for="phone-no"><strong>Phone number</strong><span style="color: red;"> *</span>  </label><br>
+            
+            <div class="sel-item">
+                <!-- Country Code Dropdown -->
+                
+                <select class="country-code" id="code-user" required>
+                    <option value=""><b>Code</b></option>
+                    <option value="+1"><b>+1</b></option>
+                    <option value="+44"><b>+44</b></option>
+                    <option value="+91"><b>+91</b></option>
+                </select>
+        
+                <input type="text" class="phone-no" id="phone-num" placeholder="Enter Phone Number" value="+1 425 151 2318" required>
+            </div>
+        </div>     
+               
+        <div class="input-data">
+            <label for="country-name"><b>Country</b><span style="color: red;"> *</span> </label><br>
+            <select class="country-name" id="country-user" value="Choose country" required>
+                <option value="Choose Counytry"> Choose Country </option>
+                <option value="United States"> United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="India">India</option>
+            </select><br>
+        </div>
+        
+        </div>
     </form>
+
 
 
 
@@ -46,13 +91,15 @@
 
 
     <h3 class="cart-heading">Review your cart</h3>
+
+    <div class="product">
     <div class="item-one">
         <div class="first-side">
         <img class="image-s" src="Img1.jpeg">
         <div class="pro-info">
-        <p class="name-one">Sofa Set</p>
+        <p class="name-one">DuoComfort Sofa Set</p>
         <p class="size-p">1x</p>
-        <p class="size-p">$25.00</p>
+        <p class="size-pr"><strong>$25.00</strong></p>
         </div>
         </div>
         
@@ -60,10 +107,11 @@
     <div class="item-two">
         <img class="image-s" src="img2.jpeg">
         <div class="pro-info">
-        <p class="name-two">Dining Set</p>   
+        <p class="name-two">Premium Dining Set</p>   
         <p class="size-p">1x</p>
-        <p class="size-p">$20.00</p>  
+        <p class="size-pr"><strong>$20.00</strong></p>  
     </div> 
+    </div>
     </div>
 
 
@@ -73,39 +121,45 @@
     <form class="side-form">
 
         <div class="dis-sec">
+            <i class="fa-solid fa-ticket"></i>
             <input type="text" placeholder="Discount Code" name="discount-code" class="discount-code"  id="discount-code" vlaue="discount-code"></input><br>
-            <button class="coup-app" value="Apply">Apply</button>
+            <button class="coup-app" placeholder="Apply" value="Apply"><strong>Apply</strong></button>
+            
         </div>
     <div class="total-money">
         <div class="sub-total">
-            <h5 class="sub-total">Subtotal</h5>
+            <p class="fade">Subtotal</p>
             <h5 class="sub-money">$45.00</h5>
         </div>
 
         <div class="shipping-total">
-            <h5>Shipping</h5>
-            <h5>$5.00</h5>
+            <p class="fade">Shipping</p>
+            <h5 class="sub-money">$5.00</h5>
         </div>
 
         <div class="sub-discount">
-            <h5>Discount</h5>
-            <h5>-$10.00</h5>
+            <p class="fade">Discount</p>
+            <h5 class="sub-money">-$10.00</h5>
         </div>
 
         <div class="total-amount">
-            <h5>Total</h5>
-            <h5>$40.00</h5>
+            <h5 class="tot-am">Total</h5>
+            <h5 class="sub-money">$40.00</h5>
         </div>
     </div>
 
-     <button class="pay-now" >Pay Now</button>
+     <button class="pay-now" ><strong>Pay Now</strong></button>
     </form>
 
 
     <div class="last-item">
-        <h5 class="last-hdng">Secure Checkout - SSL Encrypted</h5>
+        <h5 class="last-hdng">
+            <i class="fa-solid fa-lock"></i> Secure Checkout - SSL Encrypted
+        </h5>
         <p class="last-para">Ensuring your financial and personal details are secure during every transaction.</p>
     </div>
+    
+    
 </section>
 </section> 
 </body>
